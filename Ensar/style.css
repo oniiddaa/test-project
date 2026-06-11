@@ -10,7 +10,7 @@ body{
     left: 30px;
     top: 20px;
     right: auto;
-    gap: 20px;
+    gap: 10px;
     color: rgb(0, 0, 0);
     margin-left:100px ;
     margin-right: 20px;
@@ -53,15 +53,19 @@ text-shadow: 2px 2px 2px rgb(238, 238, 238); }
     position: relative;
     text-align: center;
     color: white;
+    height: 1vh;
 }
 .contact-section {
-    max-width: 1500px;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    z-index: 10;
+
+    background: rgba(0,0,0,0.7);
     padding: 25px;
-    background: #1e1e1e;
     border-radius: 12px;
     color: white;
-    font-family: Arial, sans-serif;
-    margin-top: 50px;
+    max-width: 800px;
 }
 
 .contact-section h2 {
@@ -71,14 +75,15 @@ text-shadow: 2px 2px 2px rgb(238, 238, 238); }
 
 .contact-item {
     margin: 12px 0;
-    font-size: 80px;
+    font-size: 40px;
     margin-top: 20px;
 }
 
 .social-links {
-    margin-top: 120px;
+    margin-top: 20px;
     display: flex;
     gap: 10px;
+ 
 }
 
 .social-btn {
@@ -89,8 +94,8 @@ text-shadow: 2px 2px 2px rgb(238, 238, 238); }
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    width: 1300px;
-    height: 300px;
+    width: 900px;
+    height: 390px;
     flex-direction: column;
     align-items: center;    
     gap: 20px;
@@ -111,4 +116,38 @@ text-shadow: 2px 2px 2px rgb(238, 238, 238); }
 
 .social-btn:hover {
     transform: translateY(-3px);
+}
+
+
+#hero img {
+    width: 100%;
+    max-height: 1700px;
+    object-fit: cover;
+}
+#searchBox {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#searchBox,
+#searchBtn {
+    position: relative;
+    z-index: 11;
+    left: 1500px;
+}
+
+.work-hours {
+    position: absolute;
+    top: 10 0px;
+    right: 50px;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 10px;
 }
