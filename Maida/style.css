@@ -1,8 +1,4 @@
-/* style.css */
 
-/* ===========================
-   1. Design Tokens / Variables
-   =========================== */
 :root {
   --color-bg: #0e0f12;
   --color-surface: #16181d;
@@ -18,9 +14,7 @@
   --transition: 0.25s ease;
 }
 
-/* ===========================
-   2. Base / Reset
-   =========================== */
+
 *,
 *::before,
 *::after {
@@ -55,9 +49,7 @@ ul {
   list-style: none;
 }
 
-/* ===========================
-   3. Header / Navigation
-   =========================== */
+
 header {
   position: sticky;
   top: 0;
@@ -110,9 +102,7 @@ nav ul li a.active {
   border-bottom-color: var(--color-accent);
 }
 
-/* ===========================
-   4. Page Title Section
-   =========================== */
+
 .page-title {
   text-align: center;
   padding: 4rem 1.5rem 3rem;
@@ -132,9 +122,7 @@ nav ul li a.active {
   font-size: 1.1rem;
 }
 
-/* ===========================
-   5. Models Grid
-   =========================== */
+
 .models {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -147,9 +135,7 @@ nav ul li a.active {
   gap: 2rem;
 }
 
-/* ===========================
-   6. Model Card
-   =========================== */
+
 .model-card {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -205,9 +191,7 @@ nav ul li a.active {
   flex: 1;
 }
 
-/* ===========================
-   7. Specs List
-   =========================== */
+
 .specs {
   margin-top: 0.5rem;
   border-top: 1px solid var(--color-border);
@@ -232,9 +216,7 @@ nav ul li a.active {
   color: var(--color-text);
 }
 
-/* ===========================
-   8. Footer
-   =========================== */
+
 footer {
   border-top: 1px solid var(--color-border);
   text-align: center;
@@ -243,9 +225,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ===========================
-   9. Responsive
-   =========================== */
+
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
@@ -261,7 +241,6 @@ footer {
   }
 }
 
-/* Controls */
 .model-controls {
   max-width: var(--max-width);
   margin: 0 auto 2rem;
@@ -324,7 +303,7 @@ footer {
   padding: 2rem;
 }
 
-/* Scroll reveal */
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
