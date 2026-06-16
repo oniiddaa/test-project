@@ -48,10 +48,9 @@ body{
 }
 
 
-
 .hero{
     text-align:center;
-    padding:80px 20px;
+    padding:80px 20px 40px;
 }
 
 .hero h1{
@@ -68,6 +67,22 @@ body{
 
 
 
+.hero-image{
+    width:100%;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.hero-image img{
+    width:90%;
+    max-width:1200px;
+    height:auto;
+    border-radius:20px;
+    border:3px solid orange;
+    box-shadow:0 0 25px rgba(255,165,0,.25);
+}
+
+
 .container{
     width:90%;
     max-width:1400px;
@@ -76,7 +91,6 @@ body{
     gap:30px;
     align-items:stretch;
 }
-
 
 
 .info-box{
@@ -116,7 +130,6 @@ body{
 }
 
 
-
 .form-section{
     flex:2;
     background:#161616;
@@ -136,7 +149,6 @@ body{
     display:flex;
     flex-direction:column;
     gap:18px;
-    width:100%;
 }
 
 #contactForm input,
@@ -180,6 +192,25 @@ body{
 }
 
 
+.info-box,
+.form-section{
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
 
 @media(max-width:900px){
 
@@ -198,6 +229,10 @@ body{
         font-size:42px;
     }
 
+    .hero-image img{
+        width:95%;
+    }
+
     .container{
         flex-direction:column;
     }
@@ -205,23 +240,5 @@ body{
     .info-box,
     .form-section{
         width:100%;
-    }
-}
-.info-box,
-.form-section{
-    animation:float 3s ease-in-out infinite;
-}
-
-@keyframes float{
-    0%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-12px);
-    }
-
-    100%{
-        transform:translateY(0);
     }
 }
